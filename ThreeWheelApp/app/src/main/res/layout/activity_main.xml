@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="5px"
+        android:layout_height="5px"/>
+
+    <ImageView
+        android:id="@+id/robotFace"
+        android:layout_width="85dp"
+        android:layout_height="82dp"
+        android:rotation="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/robot"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/move2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:rotation="-30"
+        app:layout_constraintBottom_toTopOf="@+id/move4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <ImageView
+        android:id="@+id/move3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:rotation="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move1"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <ImageView
+        android:id="@+id/move5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:rotation="160"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move1"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <ImageView
+        android:id="@+id/move6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="204dp"
+        android:rotation="210"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <ImageView
+        android:id="@+id/move4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="60dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move1"
+        app:layout_constraintVertical_bias="0.489"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <ImageView
+        android:id="@+id/move1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        app:srcCompat="@drawable/white_arrow" />
+
+    <Button
+        android:id="@+id/para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARA"
+        app:layout_constraintBottom_toTopOf="@+id/move4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/move1"
+        app:layout_constraintVertical_bias="0.522"
+        android:backgroundTint="#FF0000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
